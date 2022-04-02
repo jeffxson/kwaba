@@ -10,6 +10,7 @@ export const NavStyle = styled.div`
     padding: 30px
   }
   h1 {
+      position: relative;
     @media (min-width: 999px) {
       margin-left: 600px;
     }
@@ -92,7 +93,7 @@ export const NavStyle = styled.div`
     border: 1px solid gray;
     box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
     }
-    #id_work_days input[type="checkbox"] {
+    #id_work_days input[type="radio"] {
       display: none;
     }
     
@@ -110,7 +111,7 @@ export const NavStyle = styled.div`
       color: gray;
     }
     
-    #id_work_days input[type="checkbox"]:checked + span {
+    #id_work_days input[type="radio"]:checked + span {
       background-color: transparent;
       color: rgb(191, 189, 235);
       border: 1px solid rgb(191, 189, 235);
