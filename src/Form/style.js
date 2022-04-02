@@ -92,40 +92,29 @@ export const NavStyle = styled.div`
     border: 1px solid gray;
     box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
     }
-    #id_work_days{
-      display: grid;
-      height: 204px;
-      border: none;
-      overflow: hidden;
+    #id_work_days input[type="checkbox"] {
+      display: none;
     }
-    #id_work_days::-moz-focus-inner {
-      border: 0;
-    }
-    #id_work_days:focus {
-      outline: none; 
-    }
-    #id_work_days option :focus {
-     
-    }
-    #id_work_days option{
-      width: 100%;
-      font-size: 1em;
-      padding: 10px 0;
-      text-align: center;
-      margin-bottom: 20px;
-      cursor: pointer;
-      border: gray solid 1px;
-      border-radius: 5px;
-      color: ; 
-    }
-
     
-.opt1 select option:focus {
-    color: red;
-    background-color: yellow;
-  }
-
-
+    #id_work_days span {
+      display: grid;
+      font-size: 13px;
+      margin-top: 30px;
+      padding: 10px;
+      padding-top: 17px;
+      padding-bottom: 16px;
+      text-align: center;
+      text-transform: uppercase;
+      border: 1px solid gray;
+      border-radius: 10px;
+      color: gray;
+    }
+    
+    #id_work_days input[type="checkbox"]:checked + span {
+      background-color: transparent;
+      color: rgb(191, 189, 235);
+      border: 1px solid rgb(191, 189, 235);
+    }
  select{ 
    background-color: transparent; 
    color: gray;

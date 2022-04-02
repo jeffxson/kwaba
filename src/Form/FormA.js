@@ -16,17 +16,20 @@ const FormA = () => {
         </div>
         <form className="formal">
           What's your accommodation status?
-          <select name="work_days" id="id_work_days" multiple>
-            <option className="opt1" value="1">
-              Looking to renew my rent
-            </option>
-            <option className="opt1" value="2">
-              Want to pay for a new place
-            </option>
-            <option className="opt" value="3">
-              I'm still searching..
-            </option>
-          </select>
+          <p id="id_work_days">
+            <label>
+              <input type="checkbox" name="work_days" value="1" />
+              <span>Looking to renew my rent</span>
+            </label>
+            <label>
+              <input type="checkbox" name="work_days" value="2" />
+              <span>Want to pay for a new place</span>
+            </label>
+            <label>
+              <input type="checkbox" name="work_days" value="3" />
+              <span>I'm still searching..</span>
+            </label>
+          </p>
           <div className="numbe">
             <span className="span">How much is your rent request amount?</span>
             <input
