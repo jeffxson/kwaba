@@ -15,7 +15,7 @@ const FormA = () => {
   const handleSubmit = (e) => {
     window.setTimeout(() => {
       window.location.href = "https://www.kwaba.africa/";
-    }, 2000);
+    });
   };
 
   return (
