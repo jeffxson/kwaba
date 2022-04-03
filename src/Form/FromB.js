@@ -12,14 +12,18 @@ const FormA = () => {
     setPayment(payment);
     setRent(rent);
   }, []);
-  const handleSubmit = (e) => {};
+  const handleSubmit = (e) => {
+    window.setTimeout(() => {
+      window.location.href = "https://www.kwaba.africa/";
+    }, 2000);
+  };
 
   return (
     <NavStyle>
       <h1 className="h1e">My Rent</h1>
       <div className="container">
         <p>
-          <h2>Payment Options</h2>
+          <h2>Payment request amount</h2>
         </p>
         <form className="formal" onSubmit={handleSubmit}>
           <div className="newb">
@@ -31,8 +35,9 @@ const FormA = () => {
               placeholder="Amount"
             />
           </div>
-          <span className="span"> monthly plan?</span>
-          <select className="opt" id="standard-select">
+          <span className="span"> Monthly payment plan?</span>
+          <select className="opt" id="standard-select" required>
+            <option> </option>
             <option value="1  "> 1 Months</option>
             <option value="2  "> 2 Months</option>
             <option value="3  "> 3 Months</option>
@@ -45,11 +50,6 @@ const FormA = () => {
             <option value=" 10  "> 10 Months</option>
             <option value=" 11  "> 11 Months</option>
             <option value=" 12  "> 12 Months</option>
-            <option value=" 13  "> 13 Months</option>
-            <option value=" 14  "> 14 Months</option>
-            <option value=" 15  "> 15 Months</option>
-            <option value=" 16  "> 16 Months</option>
-            <option value=" 17  "> 17 Months</option>
           </select>
           <span class="focus"></span>
           Payment Option
@@ -61,7 +61,7 @@ const FormA = () => {
             <li>
               Montly payment: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
               &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
-              <b>₦ {(payment * rent) / 100 + rent} </b>
+              <b>₦ {Math.round(rent / payment + rent * 0.02)} </b>
             </li>
             <li>
               Tenor &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;

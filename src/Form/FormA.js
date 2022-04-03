@@ -22,7 +22,7 @@ const FormA = () => {
     console.log({ data });
     window.setTimeout(() => {
       window.location.href = "/Fromb";
-    }, 5000);
+    }, 2000);
     console.log({ data });
   };
 
@@ -45,6 +45,7 @@ const FormA = () => {
               <input
                 type="radio"
                 name="accommodation"
+                required
                 value="Looking to renew my rent"
                 onChange={(e) => setAccommodation(e.target.value)}
               />
@@ -54,6 +55,7 @@ const FormA = () => {
               <input
                 type="radio"
                 name="accommodation"
+                required
                 value="Want to pay for a new place"
                 onChange={(e) => setAccommodation(e.target.value)}
               />
@@ -63,6 +65,7 @@ const FormA = () => {
               <input
                 type="radio"
                 name="accommodation"
+                required
                 value="I'm still searching.."
                 onChange={(e) => setAccommodation(e.target.value)}
               />
@@ -97,7 +100,9 @@ const FormA = () => {
                 name="payment"
                 id="standard-select"
                 onChange={(e) => setPayment(e.target.value)}
+                required
               >
+                <option></option>
                 <option value="1  "> 1 Months</option>
                 <option value="2  "> 2 Months</option>
                 <option value="3  "> 3 Months</option>
@@ -110,11 +115,6 @@ const FormA = () => {
                 <option value=" 10  "> 10 Months</option>
                 <option value=" 11  "> 11 Months</option>
                 <option value=" 12  "> 12 Months</option>
-                <option value=" 13  "> 13 Months</option>
-                <option value=" 14  "> 14 Months</option>
-                <option value=" 15  "> 15 Months</option>
-                <option value=" 16  "> 16 Months</option>
-                <option value=" 17  "> 17 Months</option>
               </select>
               <span class="focus"></span>
             </div>

@@ -79,11 +79,11 @@ export const NavStyle = styled.div`
   border-radius: 10px; 
     } 
     .newb input[type=number] {
-      background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="40" height="50"><text x="13" y="29" style="font: bold 16px Arial;">₦</text></svg>') no-repeat; 
+      background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="40" height="50"><text x="13" y="30" style="font: bold 16px Arial;">₦</text></svg>') no-repeat; 
       font-size:15px;
       font-family: "Readex Pro";
      width: 300px;
-    height:40px;
+    height:45px;
     padding: 2px 20px;
     padding-left:  28px;
     margin-top: 15px; 
@@ -91,8 +91,10 @@ export const NavStyle = styled.div`
     border: 1px solid gray;
     border-radius: 10px; 
     border: 1px solid gray;
-    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
     }
+    
+    
     #id_work_days input[type="radio"] {
       display: none;
     }
@@ -113,8 +115,8 @@ export const NavStyle = styled.div`
     
     #id_work_days input[type="radio"]:checked + span {
       background-color: transparent;
-      color: rgb(191, 189, 235);
-      border: 1px solid rgb(191, 189, 235);
+      color: rgb(135, 132, 194);
+      border: 1px solid rgb(135, 132, 194);
     }
  select{ 
    background-color: transparent; 
@@ -122,7 +124,7 @@ export const NavStyle = styled.div`
     font-size:15px;
     font-family: "Readex Pro";
    width: 350px;
-  height:45px;
+  height:48px;
   padding: 2px 20px;
   margin-top: 10px; 
   margin-bottom: 15px; 
